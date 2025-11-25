@@ -1,0 +1,21 @@
+export interface Product {
+  id: number;
+  nombre: string;
+  precio: number;
+  descripcion?: string;
+  imageUrl?: string;
+  categoryId: number;
+  createdAt?: string;
+  updatedAt?: string;
+}
+
+export interface Category {
+  id: number;
+  nombre: string;
+}
+
+export interface ApiResponse<T> {
+  success: boolean;
+  message: string;
+  data: T;
+}
